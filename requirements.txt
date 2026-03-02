@@ -3,13 +3,20 @@ fastapi
 uvicorn[standard]
 python-dotenv
 
-# --- LlamaIndex & RAG ---
+# --- LlamaIndex Core & Readers (Add these) ---
+llama-index-core
+llama-index-readers-file
+llama-index-readers-json
+
+# --- LlamaIndex Integrations ---
 llama-index
 llama-index-embeddings-huggingface
 llama-index-llms-openai
+
+# --- Document Parsing ---
 pypdf
 PyMuPDF
 
-# --- CPU Optimized Torch (Critical for Railway) ---
+# --- CPU Optimized Torch ---
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.5.1+cpu
